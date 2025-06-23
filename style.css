@@ -1269,6 +1269,10 @@ swiper-slide {
   .rent-swiper .swiper-button-next {
     left: calc(50% + 25px - 15px);
   }
+      .footer {
+        padding: 40px -1px;
+        text-align: center;
+    }
 
 }
   
@@ -1278,7 +1282,7 @@ swiper-slide {
 
 /* 3. For Swiper carousel: one slide per view on mobile */
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (max-width: 640px) {
   /* === General Section Padding === */
   
   .hamburger {
@@ -1318,6 +1322,8 @@ swiper-slide {
   .filter-s{
     width: 200px;
     bottom: -130px;
+    box-shadow: 4px 4px 10px gray;
+    border-radius: 5px;
     
   }
   .filters{
@@ -1522,7 +1528,7 @@ swiper-slide {
 /*footer*/
 @media (max-width: 768px) {
   .footer {
-    padding: 40px 229px;
+    padding: -6px 101px;
     text-align: center;
   }
 
@@ -1569,6 +1575,19 @@ swiper-slide {
   .socialmedia-icons {
     justify-content: center;
   }
+
+  .footer .logo img {
+    width: 44px;
+    /* padding-left: 0px; */
+    margin-left: 80px;
+}
 }
 
-
+@media (max-width: 768px) and (max-width: 640px) {
+    .property-card, .property-card.span-2 {
+        grid-column: span 1;
+        height: 350px;
+        width: 700px;
+        margin-left: 28px;
+    }
+}
